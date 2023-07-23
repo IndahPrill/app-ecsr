@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('m_mitra_binaan', function (Blueprint $table) {
+            $table->id()->unique();
+            $table->string('kd_mb')->unique();
+            $table->string('nama')->nullable();
+            $table->string('ttl')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('no_tlp')->nullable();
+            $table->string('no_ktp')->nullable();
+            $table->string('jabatan')->nullable();
+            $table->string('kategori')->nullable();
+            $table->bigInteger('va');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('m_mitra_binaan');
+    }
+};
