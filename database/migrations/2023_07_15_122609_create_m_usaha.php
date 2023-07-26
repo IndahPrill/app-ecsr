@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('m_usaha', function (Blueprint $table) {
             $table->id()->unique();
+            $table->string('kd_mb')->unique();
             $table->string('kd_usaha')->unique();
             $table->string('nama');
             $table->string('npwp')->unique();
