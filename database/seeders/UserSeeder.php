@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
                 'user_valid' => '1',
                 'password' => '$2y$10$6Yy3pC9KVKMN/oOK/LcUveB2BVjtUT63Xl2yFOkEp6xZU3LSC8Fki', // 123456
                 'remember_token' => Str::random(10),
-                'createed_at' => now(),
+                'created_at' => now(),
                 'updated_at' => now()
             ],
             [
@@ -42,7 +42,7 @@ class UserSeeder extends Seeder
                 'user_valid' => '1',
                 'password' => '$2y$10$6Yy3pC9KVKMN/oOK/LcUveB2BVjtUT63Xl2yFOkEp6xZU3LSC8Fki', // 123456
                 'remember_token' => Str::random(10),
-                'createed_at' => now(),
+                'created_at' => now(),
                 'updated_at' => now()
             ],
             [
@@ -56,7 +56,7 @@ class UserSeeder extends Seeder
                 'user_valid' => '1',
                 'password' => '$2y$10$6Yy3pC9KVKMN/oOK/LcUveB2BVjtUT63Xl2yFOkEp6xZU3LSC8Fki', // 123456
                 'remember_token' => Str::random(10),
-                'createed_at' => now(),
+                'created_at' => now(),
                 'updated_at' => now()
             ]
         ]);

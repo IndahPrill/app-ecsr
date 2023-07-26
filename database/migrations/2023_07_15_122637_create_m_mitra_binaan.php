@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id()->unique();
             $table->string('kd_mb')->unique();
             $table->string('nama')->nullable();
-            $table->string('ttl')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->string('tgl_lahir')->nullable();
             $table->string('alamat')->nullable();
             $table->string('no_tlp')->nullable();
             $table->string('no_ktp')->nullable();

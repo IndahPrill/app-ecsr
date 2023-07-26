@@ -55,50 +55,59 @@
                                     <div class="mb-3 row">
                                         <label for="dp_nama_pemilik" class="col-sm-3 col-form-label text-end text-end">Nama Pemilik <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="hidden" wire:model="code_mb" name="code_mb" value="{{ Session::get('code_mb'); }}">
-                                            <input type="text" class="form-control @error('dp_nama_pemilik') is-invalid @enderror" wire:model="dp_nama_pemilik" name="dp_nama_pemilik" id="dp_nama_pemilik" required="" placeholder="Masukkan Nama Pemilik" autocomplete="off" />
+                                            <input type="hidden" wire:model="code_mb" id="code_mb" value="{{ Session::get('code_mb'); }}">
+                                            <input type="text" class="form-control @error('dp_nama_pemilik') is-invalid @enderror" wire:model="dp_nama_pemilik" id="dp_nama_pemilik" required="" placeholder="Masukkan Nama Pemilik" autocomplete="off" />
                                             @error('dp_nama_pemilik') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="dp_ttl" class="col-sm-3 col-form-label text-end">Tempat Tanggal Lahir <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('dp_ttl') is-invalid @enderror" wire:model="dp_ttl" name="dp_ttl" id="dp_ttl" required="" placeholder="Masukkan Tempat Tanggal Lahir" />
-                                            @error('dp_ttl') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control @error('dp_tempat') is-invalid @enderror" wire:model="dp_tempat" id="dp_tempat" required="" placeholder="Masukkan Tempat Lahir" />
+                                            @error('dp_tempat') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="input-group">
+                                                <span class="input-group-text">
+                                                    <i class="fa-solid fa-calendar icon icon-xs"></i>
+                                                </span>
+                                                <input type="text" class="form-control @error('dp_tgl_lahir') is-invalid @enderror" wire:model="dp_tgl_lahir" id="dp_tgl_lahir" required="" placeholder="mm/dd/yyyy" data-datepicker="" />
+                                                @error('dp_tgl_lahir') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="dp_kebangsaan" class="col-sm-3 col-form-label text-end">Kebangsaan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('dp_kebangsaan') is-invalid @enderror" wire:model="dp_kebangsaan" name="dp_kebangsaan" id="dp_kebangsaan" required="" placeholder="Masukkan Kebangsaan" />
+                                            <input type="text" class="form-control @error('dp_kebangsaan') is-invalid @enderror" wire:model="dp_kebangsaan" id="dp_kebangsaan" required="" placeholder="Masukkan Kebangsaan" />
                                             @error('dp_kebangsaan') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="dp_alamat" class="col-sm-3 col-form-label text-end">Alamat <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('dp_alamat') is-invalid @enderror" wire:model="dp_alamat" name="dp_alamat" id="dp_alamat" required="" placeholder="Masukkan Alamat" />
+                                            <input type="text" class="form-control @error('dp_alamat') is-invalid @enderror" wire:model="dp_alamat" id="dp_alamat" required="" placeholder="Masukkan Alamat" />
                                             @error('dp_alamat') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="dp_no_tlp" class="col-sm-3 col-form-label text-end">No Telepon <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('dp_no_tlp') is-invalid @enderror" wire:model="dp_no_tlp" name="dp_no_tlp" id="dp_no_tlp" required="" placeholder="Masukkan Nomor Telepon" />
+                                            <input type="number" class="form-control @error('dp_no_tlp') is-invalid @enderror" wire:model="dp_no_tlp" id="dp_no_tlp" required="" placeholder="Masukkan Nomor Telepon" />
                                             @error('dp_no_tlp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="dp_no_ktp" class="col-sm-3 col-form-label text-end">No KTP <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('dp_no_ktp') is-invalid @enderror" wire:model="dp_no_ktp" name="dp_no_ktp" id="dp_no_ktp" required="" placeholder="Masukkan Nomor KTP" />
+                                            <input type="number" class="form-control @error('dp_no_ktp') is-invalid @enderror" wire:model="dp_no_ktp" id="dp_no_ktp" required="" placeholder="Masukkan Nomor KTP" />
                                             @error('dp_no_ktp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="dp_jabatan" class="col-sm-3 col-form-label text-end">Jabatan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('dp_jabatan') is-invalid @enderror" wire:model="dp_jabatan" name="dp_jabatan" id="dp_jabatan" required="" placeholder="Masukkan Jabatan" />
+                                            <input type="text" class="form-control @error('dp_jabatan') is-invalid @enderror" wire:model="dp_jabatan" id="dp_jabatan" required="" placeholder="Masukkan Jabatan" />
                                             @error('dp_jabatan') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
@@ -111,35 +120,35 @@
                                     <div class="mb-3 row">
                                         <label for="du_nama_usaha" class="col-sm-4 col-form-label text-end">Nama Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_nama_usaha') is-invalid @enderror" wire:model="du_nama_usaha" name="du_nama_usaha" id="du_nama_usaha" required="" placeholder="Masukkan Nama Usaha" autocomplete="off" />
+                                            <input type="text" class="form-control @error('du_nama_usaha') is-invalid @enderror" wire:model="du_nama_usaha" id="du_nama_usaha" required="" placeholder="Masukkan Nama Usaha" autocomplete="off" />
                                             @error('du_nama_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_npwp" class="col-sm-4 col-form-label text-end">NPWP <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_npwp') is-invalid @enderror" wire:model="du_npwp" name="du_npwp" id="du_npwp" required="" placeholder="Masukkan NPWP" />
+                                            <input type="text" class="form-control @error('du_npwp') is-invalid @enderror" wire:model="du_npwp" id="du_npwp" required="" placeholder="Masukkan NPWP" />
                                             @error('du_npwp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_tahun_usaha" class="col-sm-4 col-form-label text-end">Tahun Mulai Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_tahun_usaha') is-invalid @enderror" wire:model="du_tahun_usaha" name="du_tahun_usaha" id="du_tahun_usaha" required="" placeholder="Masukkan Tahun Mulai Usaha" />
+                                            <input type="text" class="form-control @error('du_tahun_usaha') is-invalid @enderror" wire:model="du_tahun_usaha" id="du_tahun_usaha" required="" placeholder="Masukkan Tahun Mulai Usaha" />
                                             @error('du_tahun_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_alamat_usaha" class="col-sm-4 col-form-label text-end">Alamat Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_alamat_usaha') is-invalid @enderror" wire:model="du_alamat_usaha" name="du_alamat_usaha" id="du_alamat_usaha" required="" placeholder="Masukkan Alamat Usaha" />
+                                            <input type="text" class="form-control @error('du_alamat_usaha') is-invalid @enderror" wire:model="du_alamat_usaha" id="du_alamat_usaha" required="" placeholder="Masukkan Alamat Usaha" />
                                             @error('du_alamat_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_sektor_usaha" class="col-sm-4 col-form-label text-end">Sektor Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <select class="form-select @error('du_sektor_usaha') is-invalid @enderror" wire:model="du_sektor_usaha" name="du_sektor_usaha" id="du_sektor_usaha" aria-label="Default select example">
+                                            <select class="form-select @error('du_sektor_usaha') is-invalid @enderror" wire:model="du_sektor_usaha" id="du_sektor_usaha" aria-label="Default select example">
                                                 <option selected>--PILIH--</option>
                                                 <option value="1">Industri</option>
                                                 <option value="2">Perdagangan</option>
@@ -154,21 +163,21 @@
                                     <div class="mb-3 row">
                                         <label for="du_produk_usaha" class="col-sm-4 col-form-label text-end">Produk <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_produk_usaha') is-invalid @enderror" wire:model="du_produk_usaha" name="du_produk_usaha" id="du_produk_usaha" required="" placeholder="Masukkan Produk" />
+                                            <input type="text" class="form-control @error('du_produk_usaha') is-invalid @enderror" wire:model="du_produk_usaha" id="du_produk_usaha" required="" placeholder="Masukkan Produk" />
                                             @error('du_produk_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_kapasitas_produksi" class="col-sm-4 col-form-label text-end">Kapasitas Produksi <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_kapasitas_produksi') is-invalid @enderror" wire:model="du_kapasitas_produksi" name="du_kapasitas_produksi" id="du_kapasitas_produksi" required="" placeholder="Masukkan Kapasitas Produksi" />
+                                            <input type="text" class="form-control @error('du_kapasitas_produksi') is-invalid @enderror" wire:model="du_kapasitas_produksi" id="du_kapasitas_produksi" required="" placeholder="Masukkan Kapasitas Produksi" />
                                             @error('du_kapasitas_produksi') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_sarana_usaha" class="col-sm-4 col-form-label text-end">Sarana Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <select class="form-select @error('du_sarana_usaha') is-invalid @enderror" wire:model="du_sarana_usaha" name="du_sarana_usaha" id="du_sarana_usaha" aria-label="Default select example">
+                                            <select class="form-select @error('du_sarana_usaha') is-invalid @enderror" wire:model="du_sarana_usaha" id="du_sarana_usaha" aria-label="Default select example">
                                                 <option selected>--PILIH--</option>
                                                 <option value="1">Milik Sendiri</option>
                                                 <option value="2">Badan Usaha</option>
@@ -179,14 +188,14 @@
                                     <div class="mb-3 row">
                                         <label for="du_jml_modal_usaha" class="col-sm-4 col-form-label text-end">Jumlah Modal Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_jml_modal_usaha') is-invalid @enderror" wire:model="du_jml_modal_usaha" name="du_jml_modal_usaha" id="du_jml_modal_usaha" required="" placeholder="Masukkan Jumlah Modal Usaha" />
+                                            <input type="number" class="form-control @error('du_jml_modal_usaha') is-invalid @enderror" wire:model="du_jml_modal_usaha" id="du_jml_modal_usaha" required="" placeholder="Masukkan Jumlah Modal Usaha" />
                                             @error('du_jml_modal_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_asal_modal_usaha" class="col-sm-4 col-form-label text-end">Asal modal Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <select class="form-select @error('du_asal_modal_usaha') is-invalid @enderror" wire:model="du_asal_modal_usaha" name="du_asal_modal_usaha" id="du_asal_modal_usaha" aria-label="Default select example">
+                                            <select class="form-select @error('du_asal_modal_usaha') is-invalid @enderror" wire:model="du_asal_modal_usaha" id="du_asal_modal_usaha" aria-label="Default select example">
                                                 <option selected>--PILIH--</option>
                                                 <option value="1">Bantuan Pemerintah (Hibah)</option>
                                                 <option value="2">Pinjaman Pemerintah</option>
@@ -200,70 +209,70 @@
                                     <div class="mb-3 row">
                                         <label for="du_jml_aset_usaha" class="col-sm-4 col-form-label text-end">Jumlah Aset Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_jml_aset_usaha') is-invalid @enderror" wire:model="du_jml_aset_usaha" name="du_jml_aset_usaha" id="du_jml_aset_usaha" required="" placeholder="Masukkan Jumlah Aset Usaha" />
+                                            <input type="number" class="form-control @error('du_jml_aset_usaha') is-invalid @enderror" wire:model="du_jml_aset_usaha" id="du_jml_aset_usaha" required="" placeholder="Masukkan Jumlah Aset Usaha" />
                                             @error('du_jml_aset_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_jml_omset_bulan" class="col-sm-4 col-form-label text-end">Omzet Perbulan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_jml_omset_bulan') is-invalid @enderror" wire:model="du_jml_omset_bulan" name="du_jml_omset_bulan" id="du_jml_omset_bulan" required="" placeholder="Masukkan Omzet Perbulan" />
+                                            <input type="number" class="form-control @error('du_jml_omset_bulan') is-invalid @enderror" wire:model="du_jml_omset_bulan" id="du_jml_omset_bulan" required="" placeholder="Masukkan Omzet Perbulan" />
                                             @error('du_jml_omset_bulan') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_laba_bersih" class="col-sm-4 col-form-label text-end">Laba/Keuntungan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_laba_bersih') is-invalid @enderror" wire:model="du_laba_bersih" name="du_laba_bersih" id="du_laba_bersih" required="" placeholder="Masukkan Laba/Keuntungan" />
+                                            <input type="number" class="form-control @error('du_laba_bersih') is-invalid @enderror" wire:model="du_laba_bersih" id="du_laba_bersih" required="" placeholder="Masukkan Laba/Keuntungan" />
                                             @error('du_laba_bersih') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_jml_tenaga_kerja" class="col-sm-4 col-form-label text-end">Jumlah Tenaga kerja <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_jml_tenaga_kerja') is-invalid @enderror" wire:model="du_jml_tenaga_kerja" name="du_jml_tenaga_kerja" id="du_jml_tenaga_kerja" required="" placeholder="Masukkan Jumlah Tenaga kerja" />
+                                            <input type="number" class="form-control @error('du_jml_tenaga_kerja') is-invalid @enderror" wire:model="du_jml_tenaga_kerja" id="du_jml_tenaga_kerja" required="" placeholder="Masukkan Jumlah Tenaga kerja" />
                                             @error('du_jml_tenaga_kerja') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_riwayat_usaha" class="col-sm-4 col-form-label text-end">Riwayat Singkat Perusahaan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_riwayat_usaha') is-invalid @enderror" wire:model="du_riwayat_usaha" name="du_riwayat_usaha" id="du_riwayat_usaha" required="" placeholder="Masukkan Riwayat Singkat Perusahaan" />
+                                            <input type="text" class="form-control @error('du_riwayat_usaha') is-invalid @enderror" wire:model="du_riwayat_usaha" id="du_riwayat_usaha" required="" placeholder="Masukkan Riwayat Singkat Perusahaan" />
                                             @error('du_riwayat_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_rencana_usaha" class="col-sm-4 col-form-label text-end">Rencana Pengembangan Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_rencana_usaha') is-invalid @enderror" wire:model="du_rencana_usaha" name="du_rencana_usaha" id="du_rencana_usaha" required="" placeholder="Masukkan Rencana Pengembangan Usaha" />
+                                            <input type="text" class="form-control @error('du_rencana_usaha') is-invalid @enderror" wire:model="du_rencana_usaha" id="du_rencana_usaha" required="" placeholder="Masukkan Rencana Pengembangan Usaha" />
                                             @error('du_rencana_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_alasan_peminjaman" class="col-sm-4 col-form-label text-end">Alasan Pinjaman Modal kerja <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_alasan_peminjaman') is-invalid @enderror" wire:model="du_alasan_peminjaman" name="du_alasan_peminjaman" id="du_alasan_peminjaman" required="" placeholder="Masukkan Alasan Pinjaman Modal Kerja" />
+                                            <input type="text" class="form-control @error('du_alasan_peminjaman') is-invalid @enderror" wire:model="du_alasan_peminjaman" id="du_alasan_peminjaman" required="" placeholder="Masukkan Alasan Pinjaman Modal Kerja" />
                                             @error('du_alasan_peminjaman') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_kebutuhan_modal" class="col-sm-4 col-form-label text-end">Kebutuhan Pinjaman Modal <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_kebutuhan_modal') is-invalid @enderror" wire:model="du_kebutuhan_modal" name="du_kebutuhan_modal" id="du_kebutuhan_modal" required="" placeholder="Masukkan Kebutuhan Pinjaman Modal" />
+                                            <input type="text" class="form-control @error('du_kebutuhan_modal') is-invalid @enderror" wire:model="du_kebutuhan_modal" id="du_kebutuhan_modal" required="" placeholder="Masukkan Kebutuhan Pinjaman Modal" />
                                             @error('du_kebutuhan_modal') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_penggunaan_modal" class="col-sm-4 col-form-label text-end">Penggunaan Modal Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_penggunaan_modal') is-invalid @enderror" wire:model="du_penggunaan_modal" name="du_penggunaan_modal" id="du_penggunaan_modal" required="" placeholder="Masukkan Penggunaan Modal Usaha" />
+                                            <input type="text" class="form-control @error('du_penggunaan_modal') is-invalid @enderror" wire:model="du_penggunaan_modal" id="du_penggunaan_modal" required="" placeholder="Masukkan Penggunaan Modal Usaha" />
                                             @error('du_penggunaan_modal') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="du_kesanggupan_angsuran" class="col-sm-4 col-form-label text-end">Kesanggupan Mengansur <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('du_kesanggupan_angsuran') is-invalid @enderror" wire:model="du_kesanggupan_angsuran" name="du_kesanggupan_angsuran" id="du_kesanggupan_angsuran" required="" placeholder="Masukkan Kesanggupan Mengansur" />
+                                            <input type="text" class="form-control @error('du_kesanggupan_angsuran') is-invalid @enderror" wire:model="du_kesanggupan_angsuran" id="du_kesanggupan_angsuran" required="" placeholder="Masukkan Kesanggupan Mengansur" />
                                             @error('du_kesanggupan_angsuran') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
@@ -277,42 +286,42 @@
                                     <div class="mb-3 row">
                                         <label for="aw_nama" class="col-sm-3 col-form-label text-end text-end">Nama Lengkap <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('aw_nama') is-invalid @enderror" wire:model="aw_nama" name="aw_nama" id="aw_nama" required="" placeholder="Masukkan Nama Lengkap" autocomplete="off" />
+                                            <input type="text" class="form-control @error('aw_nama') is-invalid @enderror" wire:model="aw_nama" id="aw_nama" required="" placeholder="Masukkan Nama Lengkap" autocomplete="off" />
                                             @error('aw_nama') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="aw_ttl" class="col-sm-3 col-form-label text-end">Tempat Tanggal Lahir <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('aw_ttl') is-invalid @enderror" wire:model="aw_ttl" name="aw_ttl" id="aw_ttl" required="" placeholder="Masukkan Tempat Tanggal Lahir" />
+                                            <input type="text" class="form-control @error('aw_ttl') is-invalid @enderror" wire:model="aw_ttl" id="aw_ttl" required="" placeholder="Masukkan Tempat Tanggal Lahir" />
                                             @error('aw_ttl') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="aw_alamat" class="col-sm-3 col-form-label text-end">Alamat <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('aw_alamat') is-invalid @enderror" wire:model="aw_alamat" name="aw_alamat" id="aw_alamat" required="" placeholder="Masukkan Alamat" />
+                                            <input type="text" class="form-control @error('aw_alamat') is-invalid @enderror" wire:model="aw_alamat" id="aw_alamat" required="" placeholder="Masukkan Alamat" />
                                             @error('aw_alamat') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="aw_hubungan" class="col-sm-3 col-form-label text-end">Hubungan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('aw_hubungan') is-invalid @enderror" wire:model="aw_hubungan" name="aw_hubungan" id="aw_hubungan" required="" placeholder="Masukkan Hubungan" />
+                                            <input type="text" class="form-control @error('aw_hubungan') is-invalid @enderror" wire:model="aw_hubungan" id="aw_hubungan" required="" placeholder="Masukkan Hubungan" />
                                             @error('aw_hubungan') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="aw_no_tlp" class="col-sm-3 col-form-label text-end">No Telepon <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('aw_no_tlp') is-invalid @enderror" wire:model="aw_no_tlp" name="aw_no_tlp" id="aw_no_tlp" required="" placeholder="Masukkan Nomor Telepon" />
+                                            <input type="number" class="form-control @error('aw_no_tlp') is-invalid @enderror" wire:model="aw_no_tlp" id="aw_no_tlp" required="" placeholder="Masukkan Nomor Telepon" />
                                             @error('aw_no_tlp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label for="aw_no_ktp" class="col-sm-3 col-form-label text-end">No KTP <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control @error('aw_no_ktp') is-invalid @enderror" wire:model="aw_no_ktp" name="aw_no_ktp" id="aw_no_ktp" required="" placeholder="Masukkan Nomor KTP" />
+                                            <input type="number" class="form-control @error('aw_no_ktp') is-invalid @enderror" wire:model="aw_no_ktp" id="aw_no_ktp" required="" placeholder="Masukkan Nomor KTP" />
                                             @error('aw_no_ktp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                         </div>
                                     </div>
