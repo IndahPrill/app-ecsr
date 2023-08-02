@@ -278,7 +278,7 @@
                                         <div class="mb-3 row">
                                             <label for="du_kebutuhan_modal" class="col-sm-4 col-form-label text-end">Kebutuhan Pinjaman Modal <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control @error('du_kebutuhan_modal') is-invalid @enderror" wire:model="du_kebutuhan_modal" id="du_kebutuhan_modal" required="" placeholder="Masukkan Kebutuhan Pinjaman Modal" />
+                                                <textarea class="form-control @error('du_kebutuhan_modal') is-invalid @enderror" placeholder="Masukkan Kebutuhan Pinjaman Modal" wire:model="du_kebutuhan_modal" id="du_kebutuhan_modal" rows="2"></textarea>
                                                 @error('du_kebutuhan_modal') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                             </div>
                                         </div>
