@@ -16,9 +16,8 @@
     </div>
     @if (auth()->user()->user_level == '1' || auth()->user()->user_level == '2')
     <div class="btn-toolbar mb-2 mb-md-0">
-        <a href="#" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
-            <i class="fa-solid fa-plus icon-xs me-2"></i>
-            New Plan
+        <a href="{{ route('info-kegiatan-tambah')}}" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
+            <i class="fa-solid fa-plus icon-xs me-2"></i>Tambah
         </a>
     </div>
     @endif

@@ -15,13 +15,14 @@ return new class extends Migration
     {
         Schema::create('m_ahli_waris', function (Blueprint $table) {
             $table->id('id')->unique();
-            $table->string('kd_usaha');
-            $table->string('nama');
-            $table->string('ttl');
-            $table->string('alamat');
-            $table->string('hubungan');
-            $table->string('no_tlp');
-            $table->string('no_ktp');
+            $table->string('kd_usaha')->nullable();
+            $table->string('nama')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->date('tgl_lahir')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('hubungan')->nullable();
+            $table->string('no_tlp')->nullable();
+            $table->string('no_ktp')->nullable();
             $table->timestamps();
         });
     }

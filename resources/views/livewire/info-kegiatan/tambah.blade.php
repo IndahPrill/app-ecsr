@@ -29,30 +29,59 @@
     <div class="col-12 mb-4">
         <div class="card border-0 shadow components-section">
             <div class="card-body">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="col-12 mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui mollitia perspiciatis dolorem quidem ullam voluptatem sequi in officiis vitae quam esse alias inventore nihil voluptatum ut, voluptates fugit! Aliquam!
+                <form class="form-horizontal" wire:submit.prevent="store" method="POST">
+                    <div class="row mb-4 mt-4">
+                        <div class="col-lg-2 col-sm-2"></div>
+                        <div class="col-lg-10 col-sm-6">
+                            <div class="mb-3 row">
+                                <label for="nama_kegiatan" class="col-sm-3 col-form-label text-end text-end">Nama Kegitan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control @error('nama_kegiatan') is-invalid @enderror" wire:model="nama_kegiatan" id="nama_kegiatan" required="" placeholder="Masukkan Nama Kegitan" autocomplete="off" />
+                                    @error('nama_kegiatan') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="tgl_kegiatan" class="col-sm-3 col-form-label text-end">Tanggal Kegiatan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa-solid fa-calendar icon icon-xs"></i></span>
+                                        <input type="text" class="form-control @error('tgl_kegiatan') is-invalid @enderror" wire:model="tgl_kegiatan" id="tgl_kegiatan" required="" placeholder="mm/dd/yyyy" data-datepicker="" />
+                                        @error('tgl_kegiatan') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="ktgr_usaha" class="col-sm-3 col-form-label text-end">Kategori Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
+                                <div class="col-sm-6">
+                                    <select class="form-select @error('ktgr_usaha') is-invalid @enderror" wire:model="ktgr_usaha" id="ktgr_usaha" aria-label="Default select example">
+                                        <option selected>--PILIH--</option>
+                                        <option value="1">Industri</option>
+                                        <option value="2">Perdagangan</option>
+                                        <option value="3">Pertanian</option>
+                                        <option value="4">Perkebunan</option>
+                                        <option value="5">Peternakan</option>
+                                        <option value="6">Jasa</option>
+                                    </select>
+                                    @error('ktgr_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="produk_usaha" class="col-sm-3 col-form-label text-end">Produk Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control @error('produk_usaha') is-invalid @enderror" wire:model="produk_usaha" id="produk_usaha" required="" placeholder="Masukkan Produk Usaha" />
+                                    @error('produk_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="desk_kegiatan" class="col-sm-3 col-form-label text-end">Deskripsi Kegiatan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
+                                <div class="col-sm-6">
+                                    <textarea class="form-control @error('desk_kegiatan') is-invalid @enderror" wire:model="desk_kegiatan" id="desk_kegiatan" rows="4"></textarea>
+                                    @error('desk_kegiatan') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="col-12 mt-4">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nulla animi at impedit ipsa aut quam praesentium perspiciatis, a tempore tempora in dolore deserunt? Doloribus dignissimos incidunt facere vitae natus!
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <div class="col-12 mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolor repellendus vitae beatae aliquam voluptas unde, recusandae porro, ad et omnis alias ullam quos dolorem libero illo magni nobis consequatur.
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

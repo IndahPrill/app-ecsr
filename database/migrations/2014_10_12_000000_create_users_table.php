@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('address')->nullable();
             $table->string('no_tlp')->nullable();
+            $table->string('no_ktp')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->enum('genre', ['0','1','2'])->default('0')->comment('1=Laki-laki;2=Perempuan');
             $table->enum('user_level', ['0','1','2'])->default('0')->comment('0=User;1=Admin;2=Staf');
