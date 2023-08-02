@@ -26,45 +26,6 @@ class Tambah extends Component
     public $aw_nama, $aw_tempat_lahir, $aw_tgl_lahir, $aw_alamat, $aw_hubungan, $aw_no_tlp, $aw_no_ktp;
     public $currentStep = 1;
 
-    // Validation Rules
-    protected $rules = [
-        'dp_nama_pemilik' => 'required',
-        'dp_tempat_lahir' => 'required',
-        'dp_tgl_lahir' => 'date:Y-m-d',
-        'dp_kebangsaan' => 'required',
-        'dp_alamat' => 'required',
-        'dp_no_tlp' => 'required',
-        'dp_no_ktp' => 'required',
-        'dp_jabatan' => 'required',
-        'du_nama_usaha' => 'required',
-        'du_npwp' => 'required',
-        'du_tahun_usaha' => 'required',
-        'du_alamat_usaha' => 'required',
-        'du_sektor_usaha' => 'required',
-        'du_produk_usaha' => 'required',
-        'du_kapasitas_produksi' => 'required',
-        'du_sarana_usaha' => 'required',
-        'du_jml_modal_usaha' => 'required',
-        'du_asal_modal_usaha' => 'required',
-        'du_jml_aset_usaha' => 'required',
-        'du_jml_omset_bulan' => 'required',
-        'du_laba_bersih' => 'required',
-        'du_jml_tenaga_kerja' => 'required',
-        'du_riwayat_usaha' => 'required',
-        'du_rencana_usaha' => 'required',
-        'du_alasan_peminjaman' => 'required',
-        'du_kebutuhan_modal' => 'required',
-        'du_penggunaan_modal' => 'required',
-        'du_kesanggupan_angsuran' => 'required',
-        'aw_nama' => 'required',
-        'aw_tempat_lahir' => 'required',
-        'aw_tgl_lahir' => 'required',
-        'aw_alamat' => 'required',
-        'aw_hubungan' => 'required',
-        'aw_no_tlp' => 'required',
-        'aw_no_ktp' => 'required',
-    ];
-
     /**
      * Write code on Method
      *
@@ -163,7 +124,7 @@ class Tambah extends Component
             'du_laba_bersih' => 'required|numeric',
             'du_jml_tenaga_kerja' => 'required|numeric',
             'du_riwayat_usaha' => 'required',
-            'du_rencana_usaha' => 'required',
+            'du_rencana_usaha' => 'required|numeric',
             'du_alasan_peminjaman' => 'required',
             'du_kebutuhan_modal' => 'required',
             'du_penggunaan_modal' => 'required',

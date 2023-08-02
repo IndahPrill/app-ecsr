@@ -183,7 +183,7 @@
                                         <div class="mb-3 row">
                                             <label for="du_produk_usaha" class="col-sm-4 col-form-label text-end">Produk <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control @error('du_produk_usaha') is-invalid @enderror" wire:model="du_produk_usaha" id="du_produk_usaha" required="" placeholder="Masukkan Produk" />
+                                                <textarea class="form-control @error('du_produk_usaha') is-invalid @enderror" placeholder="Masukkan Produk" wire:model="du_produk_usaha" id="du_produk_usaha" rows="2"></textarea>
                                                 @error('du_produk_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                             </div>
                                         </div>
@@ -219,7 +219,7 @@
                                                     <option selected>--PILIH--</option>
                                                     <option value="1">Bantuan Pemerintah (Hibah)</option>
                                                     <option value="2">Pinjaman Pemerintah</option>
-                                                    <option value="2">Pinjaman Bank</option>
+                                                    <option value="3">Pinjaman Bank</option>
                                                 </select>
                                                 @error('du_asal_modal_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                             </div>
@@ -257,14 +257,14 @@
                                         <div class="mb-3 row">
                                             <label for="du_riwayat_usaha" class="col-sm-4 col-form-label text-end">Riwayat Singkat Perusahaan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control @error('du_riwayat_usaha') is-invalid @enderror" wire:model="du_riwayat_usaha" id="du_riwayat_usaha" required="" placeholder="Masukkan Riwayat Singkat Perusahaan" />
+                                                <textarea class="form-control @error('du_riwayat_usaha') is-invalid @enderror" placeholder="Masukkan Riwayat Singkat Perusahaan" wire:model="du_riwayat_usaha" id="du_riwayat_usaha" rows="2"></textarea>
                                                 @error('du_riwayat_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <label for="du_rencana_usaha" class="col-sm-4 col-form-label text-end">Rencana Pengembangan Usaha <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control @error('du_rencana_usaha') is-invalid @enderror" wire:model="du_rencana_usaha" id="du_rencana_usaha" required="" placeholder="Masukkan Rencana Pengembangan Usaha" />
+                                                <input type="number" class="form-control @error('du_rencana_usaha') is-invalid @enderror" wire:model="du_rencana_usaha" id="du_rencana_usaha" required="" placeholder="Masukkan Rencana Pengembangan Usaha" />
                                                 @error('du_rencana_usaha') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                             </div>
                                         </div>
@@ -344,6 +344,16 @@
                                             <label for="aw_hubungan" class="col-sm-3 col-form-label text-end">Hubungan <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                             <div class="col-sm-6">
                                                 <input type="text" class="form-control @error('aw_hubungan') is-invalid @enderror" wire:model="aw_hubungan" id="aw_hubungan" required="" placeholder="Masukkan Hubungan" />
+                                                <select class="form-select @error('aw_hubungan') is-invalid @enderror" wire:model="aw_hubungan" id="aw_hubungan">
+                                                    <option selected>--PILIH--</option>
+                                                    <option value="1">Suami</option>
+                                                    <option value="2">Isteri</option>
+                                                    <option value="3">Anak</option>
+                                                    <option value="4">Menantu</option>
+                                                    <option value="5">Orang Tua</option>
+                                                    <option value="6">Mertua</option>
+                                                    <option value="&">Cucu</option>
+                                                </select>
                                                 @error('aw_hubungan') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                             </div>
                                         </div>

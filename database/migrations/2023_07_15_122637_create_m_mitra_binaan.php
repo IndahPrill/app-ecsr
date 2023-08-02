@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('no_tlp')->nullable();
             $table->string('no_ktp')->nullable();
             $table->string('jabatan')->nullable();
-            $table->string('kategori')->nullable();
             $table->bigInteger('va')->nullable();
             $table->enum('status', ['0','1','2','3'])->default('0')->comment('0=pengajuan; 1=reviews; 2=setuju; 3=tolak');
             $table->timestamps();
