@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('tempat_lahir')->nullable();
             $table->date('tgl_lahir')->nullable();
             $table->string('alamat')->nullable();
-            $table->string('hubungan')->nullable();
             $table->enum('hubungan', ['1','2','3','4','5','6','7'])->default('1')->comment('1=suami; 2=isteri; 3=anak; 4=menantu; 5=orag tua; 6=mertua; 7=cucu');
             $table->string('no_tlp')->nullable();
             $table->string('no_ktp')->nullable();
