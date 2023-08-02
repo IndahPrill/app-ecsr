@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class m_mitra_binaan extends Model
+class m_ahli_waris extends Model
 {
     use HasFactory;
 
@@ -15,7 +15,7 @@ class m_mitra_binaan extends Model
      *
      * @var string
      */
-    protected $table = 'm_mitra_binaan';
+    protected $table = 'm_ahli_waris';
 
     /**
      * The attributes that are mass assignable.
@@ -23,15 +23,13 @@ class m_mitra_binaan extends Model
      * @var array
      */
     protected $fillable = [
-        'code_mb',
+        'kd_usaha',
         'nama',
         'tempat_lahir',
         'tgl_lahir',
-        'kebangsaan',
         'alamat',
+        'hubungan',
         'no_tlp',
-        'no_ktp',
-        'jabatan',
-        'status',
+        'no_ktp'
     ];
 }

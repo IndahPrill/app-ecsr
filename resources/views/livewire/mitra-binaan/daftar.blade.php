@@ -14,12 +14,12 @@
         </nav>
         <h2 class="h4">{{ $title }}</h2>
     </div>
-    <div class="btn-toolbar mb-2 mb-md-0">
-        <a href="{{ url('/mitra-binaan/tambahmb')}}" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
+    <!-- <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{{ route('mitra-binaan-tambah') }}" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
             <i class="fa-solid fa-plus icon-xs me-2"></i>
             Tambah
         </a>
-    </div>
+    </div> -->
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
     <livewire:users-table />

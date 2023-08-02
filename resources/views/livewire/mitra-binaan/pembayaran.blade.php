@@ -15,6 +15,46 @@
         <h2 class="h4">{{ $title }}</h2>
     </div>
 </div>
-<div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <livewire:users-table />
+<div>
+    <div class="row">
+        <div class="col-12 col-xl-4">
+            <div class="card card-body border-0 shadow mb-4">
+                <h2 class="h5 fw-bold mt-4 mb-3">Data Mitra</h2>
+                <div class="mb-3">
+                    <label for="code_mb" class="col-form-label text-end text-end">Kode Mitra Binaan </label>
+                    <input type="text" id="code_mb" class="form-control" value="{{ Session::get('code_mb'); }}" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="code_mb" class="col-form-label text-end text-end">Nama Pemilik </label>
+                    <input type="text" id="code_mb" class="form-control" value="" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="code_mb" class="col-form-label text-end text-end">Nama Usaha </label>
+                    <input type="text" id="code_mb" class="form-control" value="" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="code_mb" class="col-form-label text-end text-end">Alanat Usaha </label>
+                    <textarea id="code_mb" class="form-control" disabled></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="code_mb" class="col-form-label text-end text-end">Tanggal Kontrak </label>
+                    <input type="text" id="code_mb" class="form-control" value="" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="code_mb" class="col-form-label text-end text-end">Virtual Account </label>
+                    <input type="text" id="code_mb" class="form-control" value="" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="angsuran" class="col-form-label text-end">Angsuran Ke </label>
+                    <input type="text" id="angsuran" class="form-control" value="" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-8">
+            <div class="card card-body border-0 shadow table-wrapper table-responsive">
+                <h2 class="h5 fw-bold mt-4 mb-3">Riwayat Pembayaran</h2>
+                <livewire:users-table />
+            </div>
+        </div>
+    </div>
 </div>

@@ -54,9 +54,14 @@
     <!-- Volt CSS -->
     <link type="text/css" href="/css/volt.css" rel="stylesheet">
 
+    <link href="/css/wizard.css" rel="stylesheet" id="bootstrap-css">
+
     @livewireStyles
 
     @livewireScripts
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
 
     <!-- Core -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

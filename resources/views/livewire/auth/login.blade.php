@@ -104,12 +104,12 @@
                                 </svg>
                             </a>
                         </div> -->
-                        <!-- <div class="d-flex justify-content-center align-items-center mt-4">
+                        <div class="d-flex justify-content-center align-items-center mt-4">
                             <span class="fw-normal">
                                 Not registered?
                                 <a href="{{ route('register') }}" class="fw-bold">Create account</a>
                             </span>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
