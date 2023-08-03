@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('m_mitra_binaan', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('code_mb')->unique();
+            $table->string('code_mb')->nullable();
             $table->string('nama')->nullable();
             $table->string('tempat_lahir')->nullable();
             $table->date('tgl_lahir')->nullable();
             $table->string('kebangsaan')->nullable();
             $table->string('alamat')->nullable();
+            $table->string('kabupaten_kota')->nullable();
             $table->string('no_tlp')->nullable();
             $table->string('no_ktp')->nullable();
             $table->string('jabatan')->nullable();

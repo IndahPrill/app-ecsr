@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('m_usaha', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('code_mb')->unique();
-            $table->string('kd_usaha')->unique();
+            $table->string('code_mb')->nullable();
+            $table->string('kd_usaha')->nullable();
             $table->string('nama')->nullable();
-            $table->string('npwp')->unique();
+            $table->string('npwp')->nullable();
             $table->integer('tahun')->nullable();
             $table->string('alamat')->nullable();
             $table->string('sektor')->nullable();
             $table->string('produk')->nullable();
-            $table->integer('kap_produksi')->nullable();
+            $table->string('kap_produksi')->nullable();
             $table->string('ssr_usaha')->nullable();
             $table->integer('jml_modal')->nullable();
             $table->string('asal_modal')->nullable();
@@ -34,7 +34,7 @@ return new class extends Migration
             $table->string('alasan')->nullable();
             $table->string('kebutuhan')->nullable();
             $table->string('penggunaan')->nullable();
-            $table->integer('kesanggupan')->nullable();
+            $table->string('kesanggupan')->nullable();
             $table->timestamps();
         });
     }
