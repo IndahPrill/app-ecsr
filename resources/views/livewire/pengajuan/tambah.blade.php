@@ -102,6 +102,13 @@
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
+                                            <label for="dp_kabupaten_kota" class="col-sm-3 col-form-label text-end">Kabupaten/Kota <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control @error('dp_kabupaten_kota') is-invalid @enderror" wire:model="dp_kabupaten_kota" id="dp_kabupaten_kota" required="" placeholder="Masukkan Kabupaten/Kota" />
+                                                @error('dp_kabupaten_kota') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
                                             <label for="dp_no_tlp" class="col-sm-3 col-form-label text-end">No Telepon <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                             <div class="col-sm-6">
                                                 <input type="number" class="form-control @error('dp_no_tlp') is-invalid @enderror" wire:model="dp_no_tlp" id="dp_no_tlp" required="" placeholder="Masukkan Nomor Telepon" />

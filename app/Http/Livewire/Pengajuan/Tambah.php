@@ -18,7 +18,7 @@ class Tambah extends Component
      * @var string
      *
      */
-    public $code_mb, $dp_nama_pemilik, $dp_tempat_lahir, $dp_tgl_lahir, $dp_kebangsaan, $dp_alamat, $dp_no_tlp, $dp_no_ktp, $dp_jabatan;
+    public $code_mb, $dp_nama_pemilik, $dp_tempat_lahir, $dp_tgl_lahir, $dp_kebangsaan, $dp_alamat, $dp_kabupaten_kota, $dp_no_tlp, $dp_no_ktp, $dp_jabatan;
     public $du_nama_usaha, $du_npwp, $du_tahun_usaha, $du_alamat_usaha, $du_sektor_usaha, $du_produk_usaha;
     public $du_kapasitas_produksi, $du_sarana_usaha, $du_jml_modal_usaha, $du_asal_modal_usaha, $du_jml_aset_usaha;
     public $du_jml_omset_bulan, $du_laba_bersih, $du_jml_tenaga_kerja, $du_riwayat_usaha, $du_rencana_usaha;
@@ -48,6 +48,7 @@ class Tambah extends Component
         $this->dp_tgl_lahir = '';
         $this->dp_kebangsaan = '';
         $this->dp_alamat = '';
+        $this->dp_kabupaten_kota = '';
         $this->dp_no_tlp = '';
         $this->dp_no_ktp = '';
         $this->dp_jabatan = '';
@@ -93,6 +94,7 @@ class Tambah extends Component
             'dp_tgl_lahir' => 'required|date',
             'dp_kebangsaan' => 'required',
             'dp_alamat' => 'required',
+            'dp_kabupaten_kota' => 'required',
             'dp_no_tlp' => 'required|numeric',
             'dp_no_ktp' => 'required|numeric',
             'dp_jabatan' => 'required',
@@ -180,6 +182,7 @@ class Tambah extends Component
                 'tgl_lahir' => $this->dp_tgl_lahir,
                 'kebangsaan' => $this->dp_kebangsaan,
                 'alamat' => $this->dp_alamat,
+                'kabupaten_kota' => $this->dp_kabupaten_kota,
                 'no_tlp' => $this->dp_no_tlp,
                 'no_ktp' => $this->dp_no_ktp,
                 'jabatan' => $this->dp_jabatan,

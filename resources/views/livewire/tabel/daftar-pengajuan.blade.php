@@ -1,0 +1,1 @@
+<livewire:tabel.daftar-pengajuan />
