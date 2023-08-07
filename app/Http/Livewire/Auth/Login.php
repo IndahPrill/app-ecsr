@@ -41,7 +41,7 @@ class Login extends Component
                 auth()->login($user, $this->remember_me);
                 return redirect()->intended('/dashboard');
             } else {
-                return session()->flash('error','User tidak aktif');;
+                return session()->flash('error','User tidak aktif');
             }
         } else {
             return $this->addError('email', trans('auth.failed'));

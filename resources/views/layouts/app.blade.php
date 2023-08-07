@@ -17,6 +17,9 @@
         'mitra-binaan-tambah',
         'info-kegiatan-daftar',
         'info-kegiatan-tambah',
+        'perhitungan-dataSurvey',
+        'perhitungan-hasil',
+        'perhitungan-pohon-keputusan',
         'laporan-info-kegiatan',
         'laporan-mitra-binaan',
         'laporan-pengajuan'
