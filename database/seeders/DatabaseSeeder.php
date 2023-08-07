@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             m_usahaSeeder::class,
             m_mitra_binaanSeeder::class,
             m_ahli_warisSeeder::class,
+            data_surveySeeder::class,
         ]);
     }
 }

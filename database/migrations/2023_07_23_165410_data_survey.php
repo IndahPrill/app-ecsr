@@ -13,7 +13,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('data_survey', function (Blueprint $table) {
+            $table->id()->unique();
+            $table->string('nama')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('wilayah')->nullable();
+            $table->string('tahun')->nullable();
+            $table->string('angsuran')->nullable();
+            $table->string('status_klasifikasi')->nullable();
+            $table->string('jenis_usaha')->nullable();
+            $table->string('status_usaha')->nullable();
+        });
     }
 
     /**
@@ -23,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('data_survey');
     }
 };

@@ -13,7 +13,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('iterasi_c45', function (Blueprint $table) {
+            $table->id()->unique();
+            $table->string('iterasi');
+            $table->string('atribut_gain_ratio_max');
+            $table->string('atribut');
+            $table->string('nilai_atribut');
+            $table->string('jml_kasus_total');
+            $table->string('jml_aktif');
+            $table->string('jml_tdk_aktif');
+            $table->string('entropy');
+            $table->string('inf_gain');
+            $table->string('split_info');
+            $table->string('gain_ratio');
+        });
     }
 
     /**
@@ -23,6 +36,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('iterasi_c45');
     }
 };

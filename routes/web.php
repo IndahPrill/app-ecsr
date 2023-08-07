@@ -29,6 +29,7 @@ use App\Http\Livewire\Pengajuan;
 use App\Http\Livewire\MitraBinaan;
 use App\Http\Livewire\InfoKegiatan;
 use App\Http\Livewire\Laporan;
+use App\Http\Livewire\Perhitungan;
 
 /*
 |--------------------------------------------------------------------------
@@ -90,5 +91,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/laporan/info-kegiatan', Laporan\InfoKegiatan::class)->name('laporan-info-kegiatan');
     Route::get('/laporan/mitra-binaan', Laporan\MitraBinaan::class)->name('laporan-mitra-binaan');
     Route::get('/laporan/pengajuan', Laporan\Pengajuan::class)->name('laporan-pengajuan');
+
+    // Perhitungan C45
+    Route::get('/perhitungan/dataSurvey', Perhitungan\DataSurvey::class)->name('perhitungan-dataSurvey');
+    Route::get('/perhitungan/hasil', Perhitungan\Hasil::class)->name('perhitungan-hasil');
+    Route::get('/perhitungan/pohonKeputusan', Perhitungan\PohonKeputusan::class)->name('perhitungan-pohon-keputusan');
+    Route::get('/perhitungan/prosess', [Perhitungan\DataSurvey::class, 'process_calculate'])->name('perhitungan-prosess');
 
 });
