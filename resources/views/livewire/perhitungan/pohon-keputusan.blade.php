@@ -15,6 +15,31 @@
         <h2 class="h4">{{ $title }}</h2>
     </div>
 </div>
-<div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <livewire:users-table />
+<div class="card">
+    <div class="card-body">
+        <div class="row mb-4">
+            <div class="col-lg-6 col-sm-6">
+                {!! $output !!}
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <h4>Keterangan Hasil dari Pohon Keputusan:</h4>
+                <hr>
+                <span style="color: green;">Aktif :</span>
+                Produk Aktif jauh lebih banyak dari Tidak Aktif..
+                <br>
+
+                <span style="color: red;">Tidak Aktif :</span>
+                Produk Tidak Aktif jauh lebih banyak dari Aktif..
+                <br>
+
+                <span style="color: black;"><b>Kosong</b> :</span>
+                Produk Aktif tidak ada, dan Tidak Aktif Pun Tidak ada,.
+                <br>
+
+                <span style="color: blue;">? :</span>
+                Jumlah Produk Aktif dan Tidak Aktif Beda Tipis,.
+                <br>
+            </div>
+        </div>
+    </div>
 </div>
