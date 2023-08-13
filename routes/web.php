@@ -30,6 +30,7 @@ use App\Http\Livewire\MitraBinaan;
 use App\Http\Livewire\InfoKegiatan;
 use App\Http\Livewire\Laporan;
 use App\Http\Livewire\Perhitungan;
+use App\Http\Livewire\Tabel;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,11 +77,19 @@ Route::middleware('auth')->group(function () {
 
     // pengajuan
     Route::get('/pengajuan/daftar', Pengajuan\Daftar::class)->name('pengajuan-daftar');
+    Route::get('/pengajuan/daftar-staff', Pengajuan\DaftarStaff::class)->name('pengajuan-daftar-staff');
+    Route::post('/pengajuan/approv-staff', [Pengajuan\DaftarStaff::class, 'approvalProcess'])->name('pengajuan-approv-staff');
+    Route::post('/pengajuan/reject-staff', [Pengajuan\DaftarStaff::class, 'rejectProcess'])->name('pengajuan-reject-staff');
+    Route::get('/pengajuan/daftar-pengajuan', [Pengajuan\Daftar::class, 'getDataMitraBinaan'])->name('daftar.pengajuan');
+    Route::get('/pengajuan/daftar-pengajuan-staff', [Pengajuan\DaftarStaff::class, 'getDataMitraBinaan'])->name('daftar.pengajuan.staff');
     Route::get('/pengajuan/tambah', Pengajuan\Tambah::class)->name('pengajuan-tambah');
 
     // Data mitra binaan
     Route::get('/mitra-binaan/daftarmb', MitraBinaan\Daftar::class)->name('mitra-binaan-daftar');
+    Route::get('/mitra-binaan/list', [MitraBinaan\Daftar::class, 'getDataBayar'])->name('mitra.binaan.list');
     Route::get('/mitra-binaan/pembayaran', MitraBinaan\Pembayaran::class)->name('mitra-binaan-pembayaran');
+    Route::post('/mitra-binaan/detail', [MitraBinaan\Pembayaran::class, 'getListBayar'])->name('list.detail.pembayaran');
+    Route::post('/mitra-binaan/master', [MitraBinaan\Pembayaran::class, 'getMstrBayar'])->name('list.master.pembayaran');
     Route::get('/mitra-binaan/tambahmb', MitraBinaan\Tambah::class)->name('mitra-binaan-tambah');
 
     // Informasi kegiatan

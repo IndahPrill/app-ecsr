@@ -34,7 +34,7 @@ return new class extends Migration
             $table->string('alasan')->nullable();
             $table->string('kebutuhan')->nullable();
             $table->string('penggunaan')->nullable();
-            $table->string('kesanggupan')->nullable();
+            $table->integer('kesanggupan')->nullable();
             $table->timestamps();
         });
     }

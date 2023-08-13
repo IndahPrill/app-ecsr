@@ -21,5 +21,46 @@
     </div>
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <livewire:tabel.daftar-pengajuan />
+    <table id="mmb-table" class="table table-striped">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>Tempat Tanggal Lahir</th>
+                <th>Kebangsaan</th>
+                <th>Alamat</th>
+                <th>Kabupaten Kota</th>
+                <th>No TLP</th>
+                <th>No KTP</th>
+                <th>Jabatan</th>
+                <th>Virtual Account</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+    </table>
 </div>
+
+<script type="text/javascript">
+    $(function() {
+        var table = $('#mmb-table').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('daftar.pengajuan') }}",
+            columns: [
+                { data: 'DT_RowIndex', name: 'DT_RowIndex' },
+                { data: 'code_mb', name: 'code_mb' },
+                { data: 'nama', name: 'nama' },
+                { data: 'ttl', name: 'ttl' },
+                { data: 'kebangsaan', name: 'kebangsaan' },
+                { data: 'alamat', name: 'alamat' },
+                { data: 'kabupaten_kota', name: 'kabupaten_kota' },
+                { data: 'no_tlp', name: 'no_tlp' },
+                { data: 'no_ktp', name: 'no_ktp' },
+                { data: 'jabatan', name: 'jabatan' },
+                { data: 'va', name: 'va' },
+                { data: 'status', name: 'status' },
+            ]
+        });
+    });
+</script>
