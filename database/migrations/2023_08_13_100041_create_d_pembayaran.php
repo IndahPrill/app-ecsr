@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('d_pembayaran', function (Blueprint $table) {
             $table->id();
-            $table->string('code_mb')->unique();
+            $table->string('code_mb');
             $table->date('tgl_jth_tmpo');
             $table->date('tgl_bayar');
             $table->bigInteger('jumlah');
