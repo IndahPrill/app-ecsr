@@ -11,7 +11,8 @@
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.6",
         "livewire/livewire": "^2.8",
-        "rappasoft/laravel-livewire-tables": "^2.15"
+        "rappasoft/laravel-livewire-tables": "^2.15",
+        "yajra/laravel-datatables-oracle": "^10.3.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",

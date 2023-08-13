@@ -11,6 +11,7 @@
         'modals',
         'notifications',
         'pengajuan-daftar',
+        'pengajuan-daftar-staff',
         'pengajuan-tambah',
         'mitra-binaan-daftar',
         'mitra-binaan-pembayaran',
@@ -36,7 +37,6 @@
         {{-- Footer --}}
         @include('layouts.footer')
     </main>
-    @include('layouts.script')
 
     @elseif(in_array(request()->route()->getName(), ['register', 'register-example', 'login', 'login-example', 'forgot-password', 'forgot-password-example', 'reset-password','reset-password-example']))
 
@@ -50,4 +50,5 @@
     {{ $slot }}
 
     @endif
+    @include('layouts.script')
 </x-layouts.base>

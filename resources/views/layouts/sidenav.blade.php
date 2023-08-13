@@ -109,6 +109,41 @@
             <!-- staff -->
             @if (auth()->user()->user_level == '2')
                 <li class="nav-item">
+                    <span class="nav-link {{ Request::segment(1) !== 'pengajuan' ? 'collapsed' : '' }} d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-pengajuan">
+                        <span>
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-diagram-successor icon-xs me-2"></i>
+                            </span>
+                            <span class="sidebar-text">Pengajuan</span>
+                        </span>
+                        <span class="link-arrow">
+                            <i class="fa-solid fa-chevron-right icon-xs me-2"></i>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse {{ Request::segment(1) == 'pengajuan' ? 'show' : '' }}" role="list" id="submenu-pengajuan" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item {{ Request::segment(2) == 'daftar-staff' ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('pengajuan-daftar-staff')}}">
+                                    <span class="sidebar-icon">
+                                        <i class="fa-regular fa-circle icon-xs me-2"></i>
+                                    </span>
+                                    <span class="sidebar-text">Daftar</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-column nav">
+                            <li class="nav-item {{ Request::segment(2) == 'tambah' ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('pengajuan-tambah')}}">
+                                    <span class="sidebar-icon">
+                                        <i class="fa-regular fa-circle icon-xs me-2"></i>
+                                    </span>
+                                    <span class="sidebar-text">Tambah</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <span class="nav-link {{ Request::segment(1) !== 'mitra-binaan' ? 'collapsed' : '' }} d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-mitra-binaan">
                         <span>
                             <span class="sidebar-icon">
@@ -124,7 +159,7 @@
                         </span>
                     </span>
                     <div class="multi-level collapse {{ Request::segment(1) == 'mitra-binaan' ? 'show' : '' }}" role="list" id="submenu-mitra-binaan" aria-expanded="false">
-                        <ul class="flex-column nav">
+                        <!-- <ul class="flex-column nav">
                             <li class="nav-item {{ Request::segment(2) == 'pembayaran' ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ url('/mitra-binaan/pembayaran')}}">
                                     <span class="sidebar-icon">
@@ -133,7 +168,7 @@
                                     <span class="sidebar-text">Pembayaran</span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                         <ul class="flex-column nav">
                             <li class="nav-item {{ Request::segment(2) == 'daftarmb' ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ url('/mitra-binaan/daftarmb')}}">
@@ -186,6 +221,51 @@
                                         <i class="fa-regular fa-circle icon-xs me-2"></i>
                                     </span>
                                     <span class="sidebar-text">Tambah</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link {{ Request::segment(1) !== 'perhitungan' ? 'collapsed' : '' }} d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-perhitungan">
+                        <span>
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-calculator icon-sm me-2"></i>
+                            </span>
+                            <span class="sidebar-text">Perhitungan C45</span>
+                        </span>
+                        <span class="link-arrow">
+                            <i class="fa-solid fa-chevron-right icon-xs me-2"></i>
+                        </span>
+                    </span>
+                    <div class="multi-level collapse {{ Request::segment(1) == 'perhitungan' ? 'show' : '' }}" role="list" id="submenu-perhitungan" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item {{ Request::segment(2) == 'dataSurvey' ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('perhitungan-dataSurvey')}}">
+                                    <span class="sidebar-icon">
+                                        <i class="fa-regular fa-circle icon-xs me-2"></i>
+                                    </span>
+                                    <span class="sidebar-text">Data Survey</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-column nav">
+                            <li class="nav-item {{ Request::segment(2) == 'hasil' ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('perhitungan-hasil')}}">
+                                    <span class="sidebar-icon">
+                                        <i class="fa-regular fa-circle icon-xs me-2"></i>
+                                    </span>
+                                    <span class="sidebar-text">Hasil</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="flex-column nav">
+                            <li class="nav-item {{ Request::segment(2) == 'pohonKeputusan' ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('perhitungan-pohon-keputusan')}}">
+                                    <span class="sidebar-icon">
+                                        <i class="fa-regular fa-circle icon-xs me-2"></i>
+                                    </span>
+                                    <span class="sidebar-text">Pohon Keputusan</span>
                                 </a>
                             </li>
                         </ul>

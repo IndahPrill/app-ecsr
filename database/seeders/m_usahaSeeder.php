@@ -33,7 +33,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "5",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -54,7 +54,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "6",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -75,7 +75,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "10",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -96,7 +96,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -117,7 +117,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -138,7 +138,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -159,7 +159,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -180,7 +180,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "7",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -201,7 +201,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -222,7 +222,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -243,7 +243,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -264,7 +264,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -285,7 +285,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -306,7 +306,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -327,7 +327,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -348,7 +348,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -369,7 +369,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "5",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -390,7 +390,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -411,7 +411,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -432,7 +432,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -453,7 +453,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -474,7 +474,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "2 Tahun",
+                "kesanggupan" => 24,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -495,7 +495,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "2 Tahun",
+                "kesanggupan" => 24,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -516,7 +516,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "2 Tahun",
+                "kesanggupan" => 24,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -537,7 +537,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "2 Tahun",
+                "kesanggupan" => 24,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -558,7 +558,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "2 Tahun",
+                "kesanggupan" => 24,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -579,7 +579,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "2 Tahun",
+                "kesanggupan" => 24,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -600,7 +600,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "10",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -621,7 +621,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "5",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -642,7 +642,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -663,7 +663,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "150000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -684,7 +684,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -705,7 +705,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -726,7 +726,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -747,7 +747,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "6",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -768,7 +768,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "20000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -789,7 +789,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -810,7 +810,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -831,7 +831,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -852,7 +852,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -873,7 +873,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -894,7 +894,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "250000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -915,7 +915,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -936,7 +936,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "6",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -957,7 +957,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -978,7 +978,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -999,7 +999,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -1020,7 +1020,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "3",
                 "rencana" => "50000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -1041,7 +1041,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "2",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ],
@@ -1062,7 +1062,7 @@ class m_usahaSeeder extends Seeder
                 "jml_pekerja" => "4",
                 "rencana" => "15000000",
                 "penggunaan" => "Bantuan Permodalan Usaha",
-                "kesanggupan" => "3 Tahun",
+                "kesanggupan" => 36,
                 "created_at" => now(),
                 "updated_at" => now()
             ]
