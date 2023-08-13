@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('code_mb')->unique();
             $table->date('tgl_bayar');
             $table->date('tgl_jth_tmpo');
-            $table->integer('kesanggupan');
             $table->bigInteger('jumlah');
+            $table->integer('kesanggupan');
             $table->integer('rencana');
             $table->integer('angsuran');
             $table->integer('angsuran_berjalan');

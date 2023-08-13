@@ -52,7 +52,31 @@
         var table = $('#mmb-table').DataTable({
             processing: true,
             serverSide: true,
-            ajax: "{{ route('mitra.binaan.list') }}",
+            ajax: {
+                url: "{{ route('mitra.binaan.list') }}",
+                dataSrc: function (json) {
+                    var return_data = new Array();
+                    var i = 1;
+                    $.each(json.data, function (index, value) {
+                        return_data.push({
+                            'DT_RowIndex': value.DT_RowIndex,
+                            'code_mb': value.code_mb,
+                            'nama': value.nama,
+                            'tgl_bayar_convert': value.tgl_bayar_convert,
+                            'tgl_jth_tmpo_convert': value.tgl_jth_tmpo_convert,
+                            'rencana': formatRupiah(value.rencana.toString(), ''),
+                            'jumlah': formatRupiah(value.jumlah.toString(), ''),
+                            'kesanggupan': value.kesanggupan,
+                            'angsuran_berjalan': value.angsuran_berjalan,
+                            'angsuran': value.angsuran,
+                            'tunggakan': value.tunggakan,
+                            'action': value.action
+                        });
+                        i++;
+                    });
+                    return return_data;
+                }
+            },
             columns: [
                 { data: 'DT_RowIndex', name: 'DT_RowIndex' },
                 { data: 'code_mb', name: 'code_mb' },
@@ -76,6 +100,23 @@
             ]
         });
     });
+
+    function formatRupiah(angka, prefix) {
+        var number_string = angka.replace(/[^,\d]/g, '').toString(),
+            split = number_string.split(','),
+            sisa = split[0].length % 3,
+            rupiah = split[0].substr(0, sisa),
+            ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+        // tambahkan titik jika yang di input sudah menjadi angka ribuan
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : (rupiah ? '' + rupiah : '');
+    }
 
     function detail(code) {
         if (code) {

@@ -26,8 +26,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 12,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400002",
@@ -39,8 +39,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 12,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400003",
@@ -52,8 +52,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 12,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400004",
@@ -65,8 +65,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 22,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400005",
@@ -78,8 +78,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 22,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400006",
@@ -91,8 +91,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 25,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400007",
@@ -104,8 +104,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 25,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400008",
@@ -117,8 +117,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400009",
@@ -130,8 +130,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400010",
@@ -143,8 +143,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 12,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 7,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400011",
@@ -156,8 +156,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 12,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 7,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400012",
@@ -169,8 +169,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400013",
@@ -182,8 +182,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400014",
@@ -195,8 +195,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400015",
@@ -208,8 +208,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400016",
@@ -221,8 +221,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400017",
@@ -234,8 +234,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400018",
@@ -247,8 +247,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400019",
@@ -260,8 +260,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400020",
@@ -273,8 +273,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400021",
@@ -286,8 +286,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400022",
@@ -299,8 +299,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400023",
@@ -312,8 +312,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400024",
@@ -325,8 +325,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400025",
@@ -338,8 +338,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400026",
@@ -351,8 +351,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 12,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400027",
@@ -364,8 +364,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 12,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400028",
@@ -377,8 +377,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 12,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400029",
@@ -390,8 +390,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 22,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400030",
@@ -403,8 +403,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 22,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400031",
@@ -416,8 +416,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 22,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400032",
@@ -429,8 +429,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 25,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400033",
@@ -442,8 +442,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400034",
@@ -455,8 +455,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400035",
@@ -468,8 +468,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400036",
@@ -481,8 +481,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400037",
@@ -494,8 +494,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400038",
@@ -507,8 +507,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400039",
@@ -520,8 +520,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400040",
@@ -533,8 +533,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 19,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400041",
@@ -546,8 +546,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400042",
@@ -559,8 +559,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 13,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 6,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400043",
@@ -572,8 +572,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400044",
@@ -585,8 +585,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400045",
@@ -598,8 +598,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400046",
@@ -611,8 +611,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 10,
                 "angsuran_berjalan" => 19,
                 "tunggakan" => 9,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400047",
@@ -624,8 +624,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400048",
@@ -637,8 +637,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400049",
@@ -650,8 +650,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ],
             [
                 "code_mb" => "BM23070400050",
@@ -663,8 +663,8 @@ class m_pembayaran extends Seeder
                 "angsuran" => 31,
                 "angsuran_berjalan" => 31,
                 "tunggakan" => 0,
-                'created_at' => now(),
-                'updated_at' => now()
+                "created_at" => now(),
+                "updated_at" => now()
             ]
         ]);
     }
