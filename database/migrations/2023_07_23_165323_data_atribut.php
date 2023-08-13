@@ -13,7 +13,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('atribut', function (Blueprint $table) {
+            $table->id()->unique();
+            $table->string('atribut')->nullable();
+            $table->string('nilai_atribut')->nullable();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('atribut');
     }
 };

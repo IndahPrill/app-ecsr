@@ -16,4 +16,11 @@ class d_mitra_binaan extends Model
      * @var string
      */
     protected $table = 'm_mitra_binaan';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    // protected $fillable = [];
 }

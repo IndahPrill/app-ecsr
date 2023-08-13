@@ -13,15 +13,18 @@ return new class extends Migration
     {
         Schema::create('m_mitra_binaan', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('kd_mb')->unique();
+            $table->string('code_mb')->nullable();
             $table->string('nama')->nullable();
-            $table->string('ttl')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->date('tgl_lahir')->nullable();
+            $table->string('kebangsaan')->nullable();
             $table->string('alamat')->nullable();
+            $table->string('kabupaten_kota')->nullable();
             $table->string('no_tlp')->nullable();
             $table->string('no_ktp')->nullable();
             $table->string('jabatan')->nullable();
-            $table->string('kategori')->nullable();
-            $table->bigInteger('va');
+            $table->bigInteger('va')->nullable();
+            $table->enum('status', ['0','1','2'])->default('0')->comment('0=pengajuan; 1=setuju/reviews; 2=tolak');
             $table->timestamps();
         });
     }
