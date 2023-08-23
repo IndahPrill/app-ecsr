@@ -480,6 +480,14 @@
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item {{ Request::segment(1) == 'list-user' ? 'active' : '' }}">
+                    <a href="{{ route('list-user')}}" class="nav-link">
+                        <span class="sidebar-icon">
+                            <i class="fa-solid fa-user icon-xs me-2"></i>
+                        </span>
+                        <span class="sidebar-text">List User</span>
+                    </a>
+                </li>
             @endif
             <!-- <li class="nav-item {{ Request::segment(1) == 'transactions' ? 'active' : '' }}">
                 <a href="/transactions" class="nav-link">

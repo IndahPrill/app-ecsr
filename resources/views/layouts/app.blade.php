@@ -23,7 +23,8 @@
         'perhitungan-pohon-keputusan',
         'laporan-info-kegiatan',
         'laporan-mitra-binaan',
-        'laporan-pengajuan'
+        'laporan-pengajuan',
+        'list-user'
     ]))
 
     {{-- Nav --}}
