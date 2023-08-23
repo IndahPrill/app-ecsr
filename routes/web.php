@@ -31,6 +31,7 @@ use App\Http\Livewire\InfoKegiatan;
 use App\Http\Livewire\Laporan;
 use App\Http\Livewire\Perhitungan;
 use App\Http\Livewire\Tabel;
+use App\Http\Livewire\ListUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -106,5 +107,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/perhitungan/hasil', Perhitungan\Hasil::class)->name('perhitungan-hasil');
     Route::get('/perhitungan/pohonKeputusan', Perhitungan\PohonKeputusan::class)->name('perhitungan-pohon-keputusan');
     Route::get('/perhitungan/prosess', [Perhitungan\DataSurvey::class, 'process_calculate'])->name('perhitungan-prosess');
+
+    // list users
+    Route::get('/list-user', ListUser\DaftarUser::class)->name('list-user');
+    Route::get('/list-user/getData', [ListUser\DaftarUser::class, 'getDataUser'])->name('get.data.users');
+    Route::post('/list-user/hak-akses', [ListUser\DaftarUser::class, 'updAksesUser'])->name('access.process');
 
 });
