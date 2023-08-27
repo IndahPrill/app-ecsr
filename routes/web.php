@@ -96,6 +96,10 @@ Route::middleware('auth')->group(function () {
     // Informasi kegiatan
     Route::get('/info-kegiatan/daftarik', InfoKegiatan\Daftar::class)->name('info-kegiatan-daftar');
     Route::get('/info-kegiatan/tambahik', InfoKegiatan\Tambah::class)->name('info-kegiatan-tambah');
+    Route::get('/info-kegiatan/edit', InfoKegiatan\Edit::class)->name('info-kegiatan-edit');
+    Route::post('/info-kegiatan/edit-data', [InfoKegiatan\Edit::class, 'getkegiatanById'])->name('info-kegiatan-edit-data');
+    Route::post('/info-kegiatan/edit-process', [InfoKegiatan\Edit::class, 'update'])->name('info-kegiatan-edit-process');
+    Route::get('/info-kegiatan/list', [InfoKegiatan\Daftar::class, 'getKegiatan'])->name('kegiatan.list');
 
     // Laporan
     Route::get('/laporan/info-kegiatan', Laporan\InfoKegiatan::class)->name('laporan-info-kegiatan');

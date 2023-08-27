@@ -18,6 +18,7 @@
         'mitra-binaan-tambah',
         'info-kegiatan-daftar',
         'info-kegiatan-tambah',
+        'info-kegiatan-edit',
         'perhitungan-dataSurvey',
         'perhitungan-hasil',
         'perhitungan-pohon-keputusan',

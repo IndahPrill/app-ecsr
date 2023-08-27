@@ -35,26 +35,6 @@
     </table>
 </div>
 
-<!-- Modal Content -->
-<div class="modal fade" id="modal-aksesUser" tabindex="-1" role="dialog" aria-labelledby="modal-aksesUser" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="h6 modal-title"></h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Apakah Anda Yakin ?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary">Accept</button>
-                <button type="button" class="btn btn-link text-gray-600 ms-auto" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of Modal Content -->
-
 <script type="text/javascript">
     $(function() {
         var table = $('#mmb-table').DataTable({
