@@ -23,5 +23,74 @@
     @endif
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <livewire:users-table />
+    <table table id="mmb-table" class="table table-striped">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>Tanggal</th>
+                <th>Kategori</th>
+                <th>Produk</th>
+                <th>Deskripsi</th>
+                <th>Created At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
 </div>
+
+<script type="text/javascript">
+    $(function() {
+        var table = $('#mmb-table').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: {
+                url: "{{ route('kegiatan.list') }}",
+                dataSrc: function (json) {
+                    var return_data = new Array();
+                    var i = 1;
+                    $.each(json.data, function (index, value) {
+                        return_data.push({
+                            'DT_RowIndex': value.DT_RowIndex,
+                            'kode_kegiatan': value.kode_kegiatan,
+                            'nama_kegiatan': value.nama_kegiatan,
+                            'tgl_kegiatan_con': value.tgl_kegiatan_con,
+                            'kategori_usaha': value.kategori_usaha,
+                            'produk_usaha': value.produk_usaha,
+                            'deskripsi_usaha': value.deskripsi_usaha,
+                            'created_at_con': value.created_at_con,
+                            'action': value.action
+                        });
+                        i++;
+                    });
+                    return return_data;
+                }
+            },
+            columns: [
+                { data: 'DT_RowIndex', name: 'DT_RowIndex' },
+                { data: 'kode_kegiatan', name: 'kode_kegiatan' },
+                { data: 'nama_kegiatan', name: 'nama_kegiatan' },
+                { data: 'tgl_kegiatan_con', name: 'tgl_kegiatan_con' },
+                { data: 'kategori_usaha', name: 'kategori_usaha' },
+                { data: 'produk_usaha', name: 'produk_usaha' },
+                { data: 'deskripsi_usaha', name: 'deskripsi_usaha' },
+                { data: 'created_at_con', name: 'created_at_con' },
+                { data: 'action', name: 'action', orderable: false }
+            ]
+        });
+    });
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    function edit(id) {
+        if (id) {
+            sessionStorage.setItem("id", id);
+            location.href = "{{ route('info-kegiatan-edit') }}";
+        }
+    }
+</script>
