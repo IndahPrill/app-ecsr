@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('kode_kegiatan')->unique();
             $table->string('nama_kegiatan');
             $table->date('tgl_kegiatan');
-            $table->string('kategori_usaha');
+            $table->enum('kategori_usaha', ['0','1','2','3','4','5','6'])->default('0')->comment('0=industri; 1=perdagangan; 2=pertanian; 3=Pertanian; 4=Perkebunan; 5=Peternakan; 6=Jasa');
             $table->string('produk_usaha');
             $table->longText('deskripsi_usaha');
             $table->timestamps();
