@@ -25,7 +25,8 @@
         'laporan-info-kegiatan',
         'laporan-mitra-binaan',
         'laporan-pengajuan',
-        'list-user'
+        'list-user',
+        'create-user'
     ]))
 
     {{-- Nav --}}

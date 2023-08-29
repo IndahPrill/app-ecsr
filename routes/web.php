@@ -116,5 +116,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/list-user', ListUser\DaftarUser::class)->name('list-user');
     Route::get('/list-user/getData', [ListUser\DaftarUser::class, 'getDataUser'])->name('get.data.users');
     Route::post('/list-user/hak-akses', [ListUser\DaftarUser::class, 'updAksesUser'])->name('access.process');
+    Route::get('/list-user/tambah', ListUser\TambahUser::class)->name('create-user');
 
 });
