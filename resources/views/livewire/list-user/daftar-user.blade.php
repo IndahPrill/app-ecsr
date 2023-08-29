@@ -13,6 +13,13 @@
         </nav>
         <h2 class="h4">{{ $title }}</h2>
     </div>
+    @if (auth()->user()->user_level == '1' || auth()->user()->user_level == '2')
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a href="{{ route('create-user')}}" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
+            <i class="fa-solid fa-plus icon-xs me-2"></i>Tambah
+        </a>
+    </div>
+    @endif
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
     <table id="mmb-table" class="table table-striped">
