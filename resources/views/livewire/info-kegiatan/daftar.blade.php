@@ -23,7 +23,7 @@
     @endif
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <table table id="mmb-table" class="table table-striped">
+    <table id="mmb-table" class="table table-striped">
         <thead>
             <tr>
                 <th>No</th>

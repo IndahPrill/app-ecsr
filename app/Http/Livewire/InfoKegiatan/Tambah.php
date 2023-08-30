@@ -52,12 +52,12 @@ class Tambah extends Component
         ]);
 
         try {
-            $qry = informasi::selectRaw('MAX(SUBSTR(kode_kegiatan, 4, 3)) AS kode')
-                    ->where('kode_kegiatan', '!=' ,'null')
-                    ->groupBy('id')
-                    ->first();
-
-            $urutan = (int) $qry->kode + 1;
+            $qry = DB::select(DB::raw("SELECT SUBSTR(kode_kegiatan, 4, 3) kode
+                                FROM m_informasi
+                                WHERE kode_kegiatan LIKE 'KKG%'
+                                ORDER BY SUBSTR(kode_kegiatan, 4, 3) DESC LIMIT 1"));
+                                
+            $urutan = (int)$qry[0]->kode + 1;
             $urutan++;
 
             $kode = "KKG" . sprintf("%03s", $urutan); // KKG001;
@@ -68,7 +68,7 @@ class Tambah extends Component
                 'tgl_kegiatan' => $this->tgl_kegiatan,
                 'kategori_usaha' => $this->ktgr_usaha,
                 'produk_usaha' => $this->produk_usaha,
-                'desk_kegiatan' => $this->desk_kegiatan,
+                'deskripsi_usaha' => $this->desk_kegiatan,
             ]);
 
             session()->flash('success','Created Successfully!!');

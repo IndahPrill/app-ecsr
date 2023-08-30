@@ -65,7 +65,7 @@ class TambahUser extends Component
                         ->whereRaw('SUBSTR( code_mb, 7, 2 ) = SUBSTR(YEAR(CURDATE()), 3, 2)')
                         ->groupBy('id')
                         ->first();
-
+            // dd(Hash::make($this->password));
             $urutan = (int) $qry->kode + 1;
 
             dd($qry);
@@ -82,7 +82,7 @@ class TambahUser extends Component
                 'first_name' => $this->first_name,
                 'last_name' => $this->last_name,
                 'email' => $this->email,
-                'password' => $this->password,
+                'password' => Hash::make($this->password),
                 'address' => $this->address,
                 'no_tlp' => $this->no_tlp,
                 'no_ktp' => $this->no_ktp,

@@ -38,49 +38,77 @@
                             <div class="mb-3 row">
                                 <label for="first_name" class="col-sm-3 col-form-label text-end text-end">Nama Pertama <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('first_name') is-invalid @enderror" wire:model="first_name" id="first_name" required="" placeholder="Masukkan Nama Pertama" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('first_name') is-invalid @enderror" wire:model="first_name" id="first_name" required="" placeholder="Masukkan Nama Pertama" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('first_name') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="last_name" class="col-sm-3 col-form-label text-end text-end">Nama Terakhir<i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('last_name') is-invalid @enderror" wire:model="last_name" id="last_name" required="" placeholder="Masukkan Nama Terakhir" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('last_name') is-invalid @enderror" wire:model="last_name" id="last_name" required="" placeholder="Masukkan Nama Terakhir" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('last_name') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="email" class="col-sm-3 col-form-label text-end text-end">Email <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="email" id="email" required="" placeholder="Masukkan Email" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="email" id="email" required="" placeholder="Masukkan Email" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('email') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="password" class="col-sm-3 col-form-label text-end text-end">Password <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('password') is-invalid @enderror" wire:model="password" id="password" required="" placeholder="Masukkan Password" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('password') is-invalid @enderror" wire:model="password" id="password" required="" placeholder="Masukkan Password" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('password') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="address" class="col-sm-3 col-form-label text-end text-end">Alamat <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('address') is-invalid @enderror" wire:model="address" id="address" required="" placeholder="Masukkan Alamat" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('address') is-invalid @enderror" wire:model="address" id="address" required="" placeholder="Masukkan Alamat" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('address') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="no_tlp" class="col-sm-3 col-form-label text-end text-end">No Telpon <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('no_tlp') is-invalid @enderror" wire:model="no_tlp" id="no_tlp" required="" placeholder="Masukkan Nomor Telpon" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('no_tlp') is-invalid @enderror" wire:model="no_tlp" id="no_tlp" required="" placeholder="Masukkan Nomor Telpon" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('no_tlp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="no_ktp" class="col-sm-3 col-form-label text-end text-end">No KTP <i class="fa-solid fa-star fa-2xs" style="color: #ff0000;"></i></label>
                                 <div class="col-sm-6">
+<<<<<<< HEAD
+                                    <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="no_ktp" id="no_ktp" required="" placeholder="Masukkan No KTP" autocomplete="off" />
+=======
                                     <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="no_ktp" id="no_ktp" required="" placeholder="Masukkan No KTP" />
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                                     @error('no_ktp') <span class="invalid-feedback">{{ $message }}</span> @enderror
                                 </div>
                             </div>

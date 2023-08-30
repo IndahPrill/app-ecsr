@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class m_informasi extends Model
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
 
     public $timestamps = true;
     /**
@@ -22,15 +23,17 @@ class m_informasi extends Model
      *
      * @var array
      */
-    protected $fillable = [
-        'id',
-        'kode_kegiatan',
-        'nama_kegiatan',
-        'tempat_lahir',
-        'tgl_kegiatan',
-        'kebangsaan',
-        'kategori_usaha',
-        'produk_usaha',
-        'deskripsi_usaha',
-    ];
+    // protected $fillable = [
+    //     'id',
+    //     'kode_kegiatan',
+    //     'nama_kegiatan',
+    //     'tempat_lahir',
+    //     'tgl_kegiatan',
+    //     'kebangsaan',
+    //     'kategori_usaha',
+    //     'produk_usaha',
+    //     'deskripsi_usaha',
+    // ];
+
+    protected $guarded=[];
 }
