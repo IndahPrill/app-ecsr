@@ -16,5 +16,5 @@
     </div>
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <livewire:users-table />
+    
 </div>

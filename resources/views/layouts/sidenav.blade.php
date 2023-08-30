@@ -290,7 +290,7 @@
                     <div class="multi-level collapse {{ Request::segment(1) == 'pengajuan' ? 'show' : '' }}" role="list" id="submenu-pengajuan" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item {{ Request::segment(2) == 'daftar' ? 'active' : '' }}">
-                                <a class="nav-link" href="{{ route('pengajuan-daftar')}}">
+                                <a class="nav-link" href="{{ route('pengajuan-daftar-staff')}}">
                                     <span class="sidebar-icon">
                                         <i class="fa-regular fa-circle icon-xs me-2"></i>
                                     </span>

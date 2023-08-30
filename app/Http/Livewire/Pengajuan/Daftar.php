@@ -24,6 +24,7 @@ class Daftar extends Component
     {
         if ($request->ajax()) {
             $data = MrMitraBinaan::select('code_mb', 'nama', 'tempat_lahir', 'tgl_lahir', 'kebangsaan', 'alamat', 'kabupaten_kota', 'no_tlp', 'no_ktp', 'jabatan', 'va', 'status')
+                    ->where('code_mb', auth()->user()->code_mb)
                     ->orderBy('code_mb', 'desc')
                     ->get();
 

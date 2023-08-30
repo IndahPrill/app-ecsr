@@ -18,7 +18,7 @@
                                         <span class="input-group-text" id="basic-addon1">
                                             <i class="fa-solid fa-key"></i>
                                         </span>
-                                        <input wire:model="no_ktp" type="number" class="form-control" placeholder="First Name" id="no_ktp" autofocus required>
+                                        <input wire:model="no_ktp" type="number" class="form-control" placeholder="No KTP" id="no_ktp" autofocus required>
                                     </div>
                                     @error('no_ktp') <div wire:key="form" class="invalid-feedback"> {{$message}} </div> @enderror
                                 </div>
@@ -30,7 +30,7 @@
                                         <span class="input-group-text" id="basic-addon2">
                                             <i class="fa-solid fa-user"></i>
                                         </span>
-                                        <input wire:model="first_name" type="text" class="form-control" placeholder="Nama Depan" id="first_name" autofocus required>
+                                        <input wire:model="first_name" type="text" class="form-control" placeholder="Nama Depan" id="first_name" required>
                                     </div>
                                     @error('first_name') <div wire:key="form" class="invalid-feedback"> {{$message}} </div> @enderror
                                 </div>
@@ -42,7 +42,7 @@
                                         <span class="input-group-text" id="basic-addon2">
                                             <i class="fa-solid fa-user"></i>
                                         </span>
-                                        <input wire:model="last_name" type="text" class="form-control" placeholder="Nama Belakang" id="last_name" autofocus required>
+                                        <input wire:model="last_name" type="text" class="form-control" placeholder="Nama Belakang" id="last_name" required>
                                     </div>
                                     @error('last_name') <div wire:key="form" class="invalid-feedback"> {{$message}} </div> @enderror
                                 </div>
@@ -54,7 +54,7 @@
                                         <span class="input-group-text" id="basic-addon3">
                                             <i class="fa-solid fa-envelope"></i>
                                         </span>
-                                        <input wire:model="email" id="email" type="email" class="form-control" placeholder="example@company.com" autofocus required>
+                                        <input wire:model="email" id="email" type="email" class="form-control" placeholder="example@company.com" required>
                                     </div>
                                     @error('email') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                                 </div>
