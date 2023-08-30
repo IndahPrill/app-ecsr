@@ -25,7 +25,11 @@
         </div>
         @endif
     </div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
     <div class="row">
         <div class="col-12 mb-4">
             <div class="card border-0 shadow components-section">
@@ -42,7 +46,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c4cc3a1fd662f8daff02e0701bd380097779c4b2
                     <div class="row mb-4 mt-4">
                         <div class="col-lg-2 col-sm-2"></div>
                         <div class="col-lg-10 col-sm-6">

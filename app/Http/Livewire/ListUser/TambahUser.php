@@ -4,11 +4,17 @@ namespace App\Http\Livewire\ListUser;
 
 use Livewire\Component;
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class TambahUser extends Component
 {
+    /**
+     * define variable
+     *
+     * @var string
+     *
+     */
     public $first_name, $last_name, $email, $password, $address, $no_tlp, $no_ktp, $genre, $user_level;
 
     public function render()
@@ -17,6 +23,10 @@ class TambahUser extends Component
         return view('livewire.list-user.tambah-user', $data);
     }
 
+    /**
+     * Reseting all inputted fields
+     * @return void
+     */
     public function resetFields()
     {
         $this->first_name = '';
@@ -30,6 +40,10 @@ class TambahUser extends Component
         $this->user_level = '';
     }
 
+    /**
+     * store the user inputted post data in the posts table
+     * @return void
+     */
     public function store()
     {
         $validatedData = $this->validate([
@@ -41,7 +55,7 @@ class TambahUser extends Component
             'no_tlp' => 'required',
             'no_ktp' => 'required',
             'genre' => 'required',
-            'user_level' => 'required', 
+            'user_level' => 'required',
         ]);
 
         try {
@@ -53,6 +67,8 @@ class TambahUser extends Component
                         ->first();
             // dd(Hash::make($this->password));
             $urutan = (int) $qry->kode + 1;
+
+            dd($qry);
             $urutan++;
 
             $kode = "MB";
@@ -73,7 +89,7 @@ class TambahUser extends Component
                 'genre' => $this->genre,
                 'user_level' => $this->user_level,
             ]);
-        
+
             session()->flash('success','Created Successfully!!');
             $this->resetFields();
         } catch (\Exception $e) {
