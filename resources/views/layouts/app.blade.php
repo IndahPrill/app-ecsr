@@ -18,12 +18,15 @@
         'mitra-binaan-tambah',
         'info-kegiatan-daftar',
         'info-kegiatan-tambah',
+        'info-kegiatan-edit',
         'perhitungan-dataSurvey',
         'perhitungan-hasil',
         'perhitungan-pohon-keputusan',
         'laporan-info-kegiatan',
         'laporan-mitra-binaan',
-        'laporan-pengajuan'
+        'laporan-pengajuan',
+        'list-user',
+        'create-user'
     ]))
 
     {{-- Nav --}}

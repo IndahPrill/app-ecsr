@@ -290,7 +290,7 @@
                     <div class="multi-level collapse {{ Request::segment(1) == 'pengajuan' ? 'show' : '' }}" role="list" id="submenu-pengajuan" aria-expanded="false">
                         <ul class="flex-column nav">
                             <li class="nav-item {{ Request::segment(2) == 'daftar' ? 'active' : '' }}">
-                                <a class="nav-link" href="{{ route('pengajuan-daftar')}}">
+                                <a class="nav-link" href="{{ route('pengajuan-daftar-staff')}}">
                                     <span class="sidebar-icon">
                                         <i class="fa-regular fa-circle icon-xs me-2"></i>
                                     </span>
@@ -479,6 +479,14 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+                <li class="nav-item {{ Request::segment(1) == 'list-user' ? 'active' : '' }}">
+                    <a href="{{ route('list-user')}}" class="nav-link">
+                        <span class="sidebar-icon">
+                            <i class="fa-solid fa-user icon-xs me-2"></i>
+                        </span>
+                        <span class="sidebar-text">List User</span>
+                    </a>
                 </li>
             @endif
             <!-- <li class="nav-item {{ Request::segment(1) == 'transactions' ? 'active' : '' }}">

@@ -16,5 +16,65 @@
     </div>
 </div>
 <div class="card card-body border-0 shadow table-wrapper table-responsive">
-    <livewire:users-table />
+    <table id="mmb-table" class="table table-striped">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>Tanggal</th>
+                <th>Kategori</th>
+                <th>Produk</th>
+                <th>Deskripsi</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            @php 
+                $i = 0;
+            @endphp
+            @foreach($data as $val)
+            <tr>
+                <td>{{ $i + 1 }}</td>
+                <td>{{ $val->kode_kegiatan }}</td>
+                <td>{{ $val->nama_kegiatan }}</td>
+                <td>{{ $val->tgl_kegiatan }}</td>
+                <td>{{ $val->produk_usaha }}</td>
+                <td>
+                    @if ($val->kategori_usaha = '0') 
+                        <span class="badge bg-info">Industri</span>
+                    @elseif ($val->kategori_usaha = '1') 
+                        <span class="badge bg-info">Industri</span>
+                    @elseif ($val->kategori_usaha = '2') 
+                        <span class="badge bg-info">Industri</span>
+                    @elseif ($val->kategori_usaha = '3') 
+                        <span class="badge bg-info">Industri</span>
+                    @elseif ($val->kategori_usaha = '4') 
+                        <span class="badge bg-info">Industri</span>
+                    @elseif ($val->kategori_usaha = '5') 
+                        <span class="badge bg-info">Industri</span>
+                    @elseif ($val->kategori_usaha = '6') 
+                        <span class="badge bg-info">Industri</span>
+                    @endif
+                </td>
+                <td>{{ $val->deskripsi_usaha }}</td>
+                <td>{{ $val->created_at }}</td>
+            </tr>
+            @php 
+                $i++;
+            @endphp
+            @endforeach
+        </tbody>
+    </table>
 </div>
+
+<script type="text/javascript">
+    $(function() {
+        var table = $('#mmb-table').DataTable({
+            lengthChange: false,
+            buttons: ['excel', 'pdf']
+        });
+        
+        table.buttons().container().appendTo("#mmb-table_wrapper .col-md-6:eq(0)");
+    });
+</script>

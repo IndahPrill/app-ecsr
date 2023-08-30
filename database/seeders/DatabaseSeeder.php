@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             data_surveySeeder::class,
             m_pembayaran::class,
             d_pembayaran::class,
+            m_informasiSeeder::class,
         ]);
     }
 }

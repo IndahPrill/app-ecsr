@@ -31,6 +31,7 @@ use App\Http\Livewire\InfoKegiatan;
 use App\Http\Livewire\Laporan;
 use App\Http\Livewire\Perhitungan;
 use App\Http\Livewire\Tabel;
+use App\Http\Livewire\ListUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -95,6 +96,10 @@ Route::middleware('auth')->group(function () {
     // Informasi kegiatan
     Route::get('/info-kegiatan/daftarik', InfoKegiatan\Daftar::class)->name('info-kegiatan-daftar');
     Route::get('/info-kegiatan/tambahik', InfoKegiatan\Tambah::class)->name('info-kegiatan-tambah');
+    Route::get('/info-kegiatan/edit', InfoKegiatan\Edit::class)->name('info-kegiatan-edit');
+    Route::post('/info-kegiatan/edit-data', [InfoKegiatan\Edit::class, 'getkegiatanById'])->name('info-kegiatan-edit-data');
+    Route::post('/info-kegiatan/edit-process', [InfoKegiatan\Edit::class, 'update'])->name('info-kegiatan-edit-process');
+    Route::get('/info-kegiatan/list', [InfoKegiatan\Daftar::class, 'getKegiatan'])->name('kegiatan.list');
 
     // Laporan
     Route::get('/laporan/info-kegiatan', Laporan\InfoKegiatan::class)->name('laporan-info-kegiatan');
@@ -106,5 +111,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/perhitungan/hasil', Perhitungan\Hasil::class)->name('perhitungan-hasil');
     Route::get('/perhitungan/pohonKeputusan', Perhitungan\PohonKeputusan::class)->name('perhitungan-pohon-keputusan');
     Route::get('/perhitungan/prosess', [Perhitungan\DataSurvey::class, 'process_calculate'])->name('perhitungan-prosess');
+
+    // list users
+    Route::get('/list-user', ListUser\DaftarUser::class)->name('list-user');
+    Route::get('/list-user/getData', [ListUser\DaftarUser::class, 'getDataUser'])->name('get.data.users');
+    Route::post('/list-user/hak-akses', [ListUser\DaftarUser::class, 'updAksesUser'])->name('access.process');
+    Route::get('/list-user/tambah', ListUser\TambahUser::class)->name('create-user');
 
 });
