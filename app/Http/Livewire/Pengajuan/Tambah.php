@@ -126,7 +126,7 @@ class Tambah extends Component
             'du_laba_bersih' => 'required|numeric',
             'du_jml_tenaga_kerja' => 'required|numeric',
             'du_riwayat_usaha' => 'required',
-            'du_rencana_usaha' => 'required|numeric',
+            'du_rencana_usaha' => 'required',
             'du_alasan_peminjaman' => 'required',
             'du_kebutuhan_modal' => 'required',
             'du_penggunaan_modal' => 'required',
